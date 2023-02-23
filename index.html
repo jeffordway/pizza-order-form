@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lesson 10 Final</title>
+  </head>
+  <body>
+    <img src="assets/title-banner.png" alt="Bethel Pizza" id="bannerImg" />
+
+    <h1 class="title">Create Your Own Pizza</h1>
+
+    <div class="createOrder section">
+      <h2>Pizza Menu</h2>
+
+      <div id="menu">
+        <div class="menuItems">
+          <img src="assets/crusts.png" alt="Crusts" class="menuImg" />
+          <h3>Available Crusts</h3>
+          <p>Original</p>
+          <p>Thin</p>
+          <p>Gluten Free</p>
+        </div>
+
+        <div>
+          <img src="assets/sauces.png" alt="Sauces" class="menuImg" />
+          <h3>Available Sauces</h3>
+          <p>Classic Tomato</p>
+          <p>Spicy Marinara</p>
+          <p>White Garlic</p>
+        </div>
+
+        <div>
+          <img src="assets/toppings.png" alt="Toppings" class="menuImg" />
+          <h3>Available Toppings</h3>
+          <p>Chicken</p>
+          <p>Pepperoni</p>
+          <p>Cheese</p>
+          <p>Mushrooms</p>
+          <p>Baby Spinach</p>
+          <p>Olives</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form section">
+      <h2>Pizza Order Form</h2>
+      <form>
+        <div>
+          <h3>Step 1: Choose Your Crust Type</h3>
+          <label for="crust" class="formLabel">Crust:</label>
+          <select name="crust" class="formOptions" id="crust">
+            <option value="" disabled selected>Select Crust</option>
+            <option value="Original">Original</option>
+            <option value="Thin">Thin</option>
+            <option value="Gluten Free">Gluten Free</option>
+          </select>
+        </div>
+        <div>
+          <h3>Step 2: Choose Your Sauce</h3>
+          <label for="sauce" class="formLabel">Sauce:</label>
+          <select name="sauce" class="formOptions" id="sauce">
+            <option value="" disabled selected>Select Sauce</option>
+            <option value="Classic Tomato">Classic Tomato</option>
+            <option value="Spicy Marinara">Spicy Marinara</option>
+            <option value="White Garlic">White Garlic</option>
+          </select>
+        </div>
+
+        <div id="allToppings">
+          <h3>Step 3: Select Your Toppings (up to 3)</h3>
+          <label for="topping1" class="formLabel">Topping 1:</label>
+          <select name="topping1" class="formOptions" id="topping1">
+            <option value="" disabled selected>Select Topping</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Pepperoni">Pepperoni</option>
+            <option value="Cheese">Cheese</option>
+            <option value="Mushroom">Mushroom</option>
+            <option value="Baby Spinach">Baby Spinach</option>
+            <option value="Olives">Olives</option>
+          </select>
+
+          <label for="topping2" class="formLabel">Topping 2:</label>
+          <select name="topping2" class="formOptions" id="topping2">
+            <option value="" disabled selected>Select Topping</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Pepperoni">Pepperoni</option>
+            <option value="Cheese">Cheese</option>
+            <option value="Mushroom">Mushroom</option>
+            <option value="Baby Spinach">Baby Spinach</option>
+            <option value="Olives">Olives</option>
+          </select>
+
+          <label for="topping3" class="formLabel">Topping 3:</label>
+          <select name="topping3" class="formOptions" id="topping3">
+            <option value="" disabled selected>Select Topping</option>
+            <option value="Chicken">Chicken</option>
+            <option value="Pepperoni">Pepperoni</option>
+            <option value="Cheese">Cheese</option>
+            <option value="Mushroom">Mushroom</option>
+            <option value="Baby Spinach">Baby Spinach</option>
+            <option value="Olives">Olives</option>
+          </select>
+        </div>
+
+        <button type="submit" id="btn">Submit Order</button>
+      </form>
+    </div>
+
+    <div class="section completedOrder">
+      <h2>Completed Pizza Order</h2>
+      <div>
+        <h3 id="congrats"></h3>
+        <div id="pizzaOrder"></div>
+        <div id="toppings"></div>
+      </div>
+      <h3 id="total">Sales Total: $</h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
